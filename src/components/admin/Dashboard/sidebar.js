@@ -87,7 +87,7 @@ function Sidebar() {
       });
 
       if (res.status === 200) {
-        window.location.href = "/admin-login";
+        window.location.href = "https://service-marketplace-server.vercel.app/admin-login";
       } else {
         const error = new Error("Failed to logout");
         throw error;
