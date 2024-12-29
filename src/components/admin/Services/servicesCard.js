@@ -8,7 +8,7 @@ function ServicesCard() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get('http://localhost:5000/get-services');
+        const response = await axios.get('https://service-marketplace-server.vercel.app/get-services');
         setServices(response.data);
         console.log("FETHHED?>>");
       } catch (error) {

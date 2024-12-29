@@ -78,7 +78,7 @@ function Sidebar() {
 
   const handleLogout = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/admin-logout", {
+      const res = await axios.get("https://service-marketplace-server.vercel.app/admin-logout", {
         headers: {
           Accept: "application/json",
           "Content-type": "application/json",

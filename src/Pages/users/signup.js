@@ -29,7 +29,7 @@ function Signup() {
 
     const { name, email, number, work, password, cpassword } = user;
 
-    const resp = await fetch("http://localhost:5000/user-signup", {
+    const resp = await fetch("https://service-marketplace-server.vercel.app/user-signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

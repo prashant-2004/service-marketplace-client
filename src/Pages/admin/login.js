@@ -10,7 +10,7 @@ function Login() {
   const loginAdmin = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:5000/admin-signin", {
+    const res = await fetch("https://service-marketplace-server.vercel.app/admin-signin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

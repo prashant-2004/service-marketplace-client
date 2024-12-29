@@ -28,7 +28,7 @@ function Signup() {
 
     const { name, email, number, work, password, cpassword } = admin;
 
-    const resp = await fetch("http://localhost:5000/admin-signup", {
+    const resp = await fetch("https://service-marketplace-server.vercel.app/admin-signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

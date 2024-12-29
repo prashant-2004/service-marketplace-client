@@ -72,7 +72,7 @@ useEffect(() => {
     e.preventDefault();
     console.log(formData);
     try {
-      const response = await axios.post('http://localhost:5000/add-services',formData)
+      const response = await axios.post('https://service-marketplace-server.vercel.app/add-services',formData)
       if (response.status === 201) {
 
         console.log('Service data Submitted successfully');
